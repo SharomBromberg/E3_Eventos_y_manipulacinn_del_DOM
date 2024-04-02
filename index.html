@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería de Nucba</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <!--Paso 1-->
+    <header>
+        <h1>🍕Bienvenidos a La Pizzería🍕</h1>
+        <div class="box"> <img src="./img/pizza.png" alt="">
+            <button><a class="link" href="#pizzas">Ver Pizzas</a></button>
+        </div>
+
+    </header>
+
+    <section id="pizzas">
+        <h1>Ingresa el ID de la pizza de quieres buscar</h1>
+        <div class="search">
+            <input type="number" id="pizzaIdInput">
+            <button id="searchButton">Buscar Pizza</button>
+        </div>
+        <div id="resultContainer" class="container"></div>
+    </section>
+    <script src="./index.js"></script>
+
+    <footer> E3: Eventos y manipulación del DOM </footer>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+* {
+    p {
+        color: aliceblue;
+    }
+
+    h2 {
+        color: aliceblue;
+    }
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    bottom: 0;
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        place-content: center;
+
+        h1 {
+            max-width: 100%;
+            text-align: center;
+            place-content: center;
+            color: #ff0000;
+            background-color: #f67644;
+            margin-top: 0;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            place-content: center;
+            gap: 4rem;
+
+            img {
+                width: 40%;
+            }
+
+            button {
+                background-color: #fbff00;
+                border: 0.4rem solid #f67644;
+                border-radius: 0.5rem;
+
+                a {
+                    color: #ff0000;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        place-content: center;
+
+        h1 {
+            color: aliceblue;
+            width: 100%;
+            text-align: center;
+        }
+
+        .search {
+            display: flex;
+            width: 100%;
+            gap: 2rem;
+
+            input {
+                text-align: center;
+                border: 0.4rem solid #f8c900;
+                background-color: #f67644;
+                border-radius: 0.5rem;
+            }
+
+            button {
+                color: #ff0000;
+                background-color: #fbff00;
+                border: 0.4rem solid #f67644;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .container {
+            display: flex;
+            margin: 0 auto;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                max-width: 90%;
+                align-items: center;
+                place-content: center;
+                gap: 0.1rem;
+
+                p {
+                    font-weight: 600;
+                    font-size: large;
+                    border-bottom: solid aliceblue;
+                }
+
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        max-width: 100%;
+        text-align: center;
+        place-content: center;
+        color: #ff0000;
+        background-color: #f67644;
+        margin-top: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (min-width: 854px) {
+    body {
+        flex-direction: column;
+        background-color: black;
+
+        header {
+            place-content: center;
+
+            h1 {
+                width: 100%;
+                text-align: center;
+                color: #ff0000;
+                height: 5rem;
+            }
+
+            .box {
+                height: 40rem;
+
+                img {
+                    width: 40%;
+                }
+
+                button {
+                    font-size: large;
+                    font-weight: 800;
+                    color: #ff0000;
+                    width: 10rem;
+                    height: 3rem;
+                }
+            }
+        }
+
+        section {
+
+            .search {
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                input {
+                    width: 5rem;
+                    height: 2rem;
+                    font-weight: 800;
+                    font-size: larger;
+                }
+
+                button {
+                    font-size: large;
+                    font-weight: 800;
+                    color: #ff0000;
+                    width: 10rem;
+                    height: 3rem;
+                }
+            }
+        }
+
+        footer {
+            font-size: x-large;
+            font-weight: 700;
+            color: aliceblue;
+            letter-spacing: 0.1rem;
+        }
+    }
+}
+
+@media (max-width: 854px) {
+    body {
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+
+        header {
+            place-content: center;
+
+            h1 {
+                width: 100%;
+                color: #ff0000;
+                font-size: x-large;
+                margin-top: 0;
+                height: 3.5rem;
+            }
+
+            .box {
+                height: 45rem;
+
+                img {
+                    width: 70%;
+                }
+
+                button {
+                    font-size: large;
+                    font-weight: 800;
+                    color: #ff0000;
+                    width: 10rem;
+                    height: 3rem;
+
+                }
+            }
+        }
+
+        section {
+            padding: 2rem;
+            margin-top: 8rem;
+
+            .search {
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    width: 5rem;
+                    height: 2rem;
+                    font-weight: 800;
+                    font-size: larger;
+                }
+
+                button {
+                    font-size: large;
+                    font-weight: 800;
+                    color: #ff0000;
+                    width: 10rem;
+                    height: 3rem;
+
+                }
+            }
+
+            .container {
+                .card {
+                    margin: 0 auto;
+                    padding: 1.5rem;
+
+                    img {
+                        width: 70%;
+                        margin: 0 auto;
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
+
+        footer {
+            font-size: medium;
+            font-weight: 700;
+            color: aliceblue;
+            letter-spacing: 0.1rem;
+        }
+    }
+}
